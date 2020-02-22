@@ -86,4 +86,4 @@ df_biggest_smallest %>%
     plot.caption = element_text(color = "gray60", size = 10)
   )+
   scale_fill_manual(values = c('#591527', '#4E737B'))+
-  ggsave(here::here("plots", "food-consumption-emmissions.png"), dpi = 320, width = 12.3, height = 7)
+  ggsave(here::here("plots", "food-consumption-emmissions.png"), dpi = 320, width = 16, height = 7)
