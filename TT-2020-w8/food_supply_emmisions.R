@@ -1,5 +1,8 @@
 library(tidyverse)
 #remotes::install_github("wilkelab/ggtext", force = TRUE)
+#install.packages("devtools")
+#devtools::install_github("tidyverse/ggplot2")
+library(ggplot2)
 library(ggtext)
 #remotes::install_github("PMassicotte/ggpmthemes", force = TRUE)
 library(ggpmthemes)
@@ -53,37 +56,43 @@ df_biggest_smallest<-bind_rows(list(df_biggest_smallest, world_average))
 # make an ordered factor
 df_biggest_smallest$country <- fct_rev(factor(df_biggest_smallest$country, levels = c('Rwanda','Swaziland','Argentina' ,'Zambia','Bolivia', 'Malawi', 'World average',
                                                                               'Myanmar','Nicaragua','Maldives','Thailand','India' , 'Sri Lanka')))
-# visualisation
-my_title <- "**CO<sub>2</sub> Emmission from comsuming 1 Kg of <strong><span style='color:#591527;'>Animal</span></strong> and <strong><span style='color:#4E737B'>Non-Animal</span></strong> food product**"
+# visualisation  591527 + 90% saturation -->#68051f
+my_title <- "**<span style='font-size:19pt'> CO<sub>2</sub> Emission from comsuming 1 Kg of <span style='color:#6c011d;font-size:20pt'>Animal</span> and <span style='color:#4E737B'>Non-Animal</span> food products</span>**"
 
-my_subtitle <- "***A selection of the countries with the highest and lowest difference in CO<sub>2</sub> emission from animal and non animal food products.***"
+my_subtitle <- "***A selection of the countries with the highest and lowest difference in  CO<sub>2</sub> emission from animal and non-animal <br>food products.***"
 theme_set(theme_light_modified(base_family = "JetBrains Mono Bold"))
 
+color_world_average<- c("gray60", "gray60", "gray60", "gray60" ,
+           "gray60","gray60" ,"gray80", "gray60","gray60" ,"gray60" ,"gray60" ,
+           "gray60")
 df_biggest_smallest %>%
-  ggplot(aes(y = co2_per_kg, x = country, fill = animal_or_non)) +
-  geom_col() +
+  ggplot(aes(y = co2_per_kg, x = reorder(country, co2_per_kg), fill = animal_or_non)) +
+  geom_col(width =  0.8) +
   coord_flip() +
-  scale_y_continuous(expand = expansion(mult = c(0, 0.02))) +
+  scale_y_continuous() +
   xlab(NULL) +
   ylab("CO2 emmisions (Kg)") +
   labs(
     title= my_title,
     subtitle = my_subtitle,
-    caption = "Tidytuesday week #8 | Data: https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-18/food_consumption.csv | @kinenealan"
+    caption = "Tidytuesday week #8 | Data: www.nu3.de | @kinenealan"
   )+
   theme(
     legend.position = "none",
-    text = element_text(color = "gray50"),
+    text = element_text(color = "gray50", size = 14),
     plot.background = element_rect(fill = "#1F2227"),
     panel.background = element_rect(fill = "#1F2227"),
-    axis.text = element_text(color = "gray60", size = 12),
+    axis.text.y = element_text(color = color_world_average, size = 14, margin = margin(r = 8)),
+    axis.text.x = element_text(color = "gray60", size = 14, margin = margin(t = 10, b = 10)),
+    axis.title.x = element_text(margin = margin(t = 10)),
     panel.grid = element_blank(),
     panel.border = element_blank(),
     axis.ticks = element_blank(),
-    panel.grid.major.x = element_line(color = "gray50", size = 0.2),
-    plot.title = element_markdown(hjust = 0.5, family = "JetBrains Mono"),
-    plot.subtitle = element_markdown(hjust = 0.5, family = "JetBrains Mono"),
+    panel.grid.major.x = element_line(color = "gray50", size = 0.3),
+    plot.title = element_markdown(hjust = 0, family = "JetBrains Mono"),
+    plot.subtitle = element_markdown(hjust = 0, family = "JetBrains Mono", margin = margin( b = 20), size = 11),
     plot.caption = element_text(color = "gray60", size = 10)
   )+
   scale_fill_manual(values = c('#591527', '#4E737B'))+
-  ggsave(here::here("plots", "food-consumption-emmissions.png"), dpi = 320, width = 16, height = 7)
+  ggsave(here::here("plots", "food-consumption-emmissions.png"), dpi = 320, width = 14, height = 10, scale = 1)
+
