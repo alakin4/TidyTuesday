@@ -82,6 +82,6 @@ ggplot() +
   annotate("text",
            x = -73.3, 
            y = 41.48, 
-           label = "46.3% and 49.3% of the private and public schools, \nrespectively, have MRR vaccination rate below the \nstate average. Rudolf Steiner school in Berkshire \ncounty has the lowest MMR vaccination rate (3%) \namong private schools whereas Cambridgeport school \nin Middlesex county has the lowest MMR vaccination \nrate (48%) among public schools.", 
+           label = "46.3% and 49.3% of the private and public schools, \nrespectively, have MMR vaccination rate below the \nstate average. Rudolf Steiner school in Berkshire \ncounty has the lowest MMR vaccination rate (3%) \namong private schools whereas Cambridgeport school \nin Middlesex county has the lowest MMR vaccination \nrate (48%) among public schools.", 
            hjust = 0, family = "JetBrains Mono", size = 5)+
   ggsave(here::here("plots", "measles_mass.png"), dpi = 320, width = 14, height = 10, scale = 1)
