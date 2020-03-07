@@ -90,7 +90,7 @@ df_biggest_smallest %>%
     axis.ticks = element_blank(),
     panel.grid.major.x = element_line(color = "gray50", size = 0.3),
     plot.title = element_markdown(hjust = 0, family = "JetBrains Mono"),
-    plot.subtitle = element_markdown(hjust = 0, family = "JetBrains Mono", margin = margin( t = 20), size = 11),
+    plot.subtitle = element_markdown(hjust = 0, family = "JetBrains Mono", margin = margin( b = 20), size = 11),
     plot.caption = element_text(color = "gray60", size = 10)
   )+
   scale_fill_manual(values = c('#591527', '#4E737B'))+
