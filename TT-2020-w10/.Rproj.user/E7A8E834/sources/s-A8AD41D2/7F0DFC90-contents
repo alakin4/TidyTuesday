@@ -95,7 +95,7 @@ plot_age<-ggplot()+
   annotate(geom = "label", 
            x = 27, 
            y =24, 
-           label = "Most NHL players hit their prime either\nat the age of 23 or 24. The average prime\nage for hockey players is 24.9 years. The\nlegend Wayne Gretzky at hit his career\nprime at 18 years while playing World\nHockey League before joining NHL,\nwhere he hit his prime at 21.\nAlex Ovechkin hit his prime at\n22 years.", 
+           label = "Most NHL players hit their prime either\nat the age of 23 or 25. The average prime\nage for hockey players is 24.9 years. The\nlegend Wayne Gretzky at hit his career\nprime at 18 years while playing World\nHockey League before joining NHL,\nwhere he hit his prime at 21.\nAlex Ovechkin hit his prime at\n22 years.", 
            color = "black",
            hjust = 0, 
            size = 4.3,
