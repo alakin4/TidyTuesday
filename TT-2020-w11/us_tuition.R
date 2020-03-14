@@ -52,8 +52,8 @@ avg_state_tuition_cost<-avg_state_tuition_cost%>%
 #class-one Aqua: #5F7880
 #class-two Sun Kissed: #CCA085
 #Text/other Blue Steel: #4B5556
-my_title <- "<b><span style = 'color:#5F7880;'>In-state</span></b> vs <b><span style = 'color:#CCA085;'>Out-state</span></b> Tuition in the US"
-my_subtitle <- "The difference between average tuition per year in each state for both residents (in-state) and non residents (out-state).\nThe size of the difference is shown by the length of the line and the state's rank-from biggest to smallest-is indicated in\nbrackets. The states are grouped into four regions; Midwest, Northeast, South, and West."
+my_title <- "<b><span style = 'color:#5F7880;'>In-state</span></b> vs <b><span style = 'color:#CCA085;'>Out-of-state</span></b> Tuition in the US"
+my_subtitle <- "The difference between average tuition per year in each state for both residents (in-state) and non residents (out-of-state).\nThe size of the difference is shown by the length of the line and the state's rank-from biggest to smallest-is indicated in\nbrackets. The states are grouped into four regions; Midwest, Northeast, South, and West."
 
 theme_set(theme_light_modified(base_family = "IBM Plex Sans"))
 
@@ -67,7 +67,7 @@ ggplot(data = avg_state_tuition_cost,
                        colour = tuition_category), 
                   size = 2.5,
                   shape = 21)+
-  xlab("Average Tuition per yr('000 USD)") +
+  xlab("Average Tuition per yr ('000 USD)") +
   ylab(NULL)+ 
   scale_x_continuous( breaks = seq(0, 13000/1000, 1000/1000))+
   scale_y_reordered()+
