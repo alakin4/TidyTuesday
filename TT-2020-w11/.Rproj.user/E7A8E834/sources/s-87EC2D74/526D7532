@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "935315459",
     "id" : "526D7532",
-    "lastKnownWriteTime" : 1584211006,
-    "last_content_update" : 1584211006030,
+    "lastKnownWriteTime" : 1584211327,
+    "last_content_update" : 1584211327358,
     "path" : "~/Documents/Projects/TidyTuesday/TT-2020-w11/us_tuition.R",
     "project_path" : "us_tuition.R",
     "properties" : {
-        "cursorPosition" : "100,0",
+        "cursorPosition" : "98,21",
         "scrollLine" : "89",
         "tempName" : "Untitled1"
     },
