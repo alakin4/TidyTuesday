@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585334000423.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "168701369",
+    "id" : "271C1E25",
+    "lastKnownWriteTime" : 1585340875,
+    "last_content_update" : 1585340875478,
+    "path" : "~/Documents/Projects/TidyTuesday/TT-2020-w12/the_office_tvshow_v2.R",
+    "project_path" : "the_office_tvshow_v2.R",
+    "properties" : {
+        "cursorPosition" : "205,51",
+        "scrollLine" : "195"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
