@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585399102580.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "785969642",
+    "id" : "B3C4F922",
+    "lastKnownWriteTime" : 1585479514,
+    "last_content_update" : 1585479514783,
+    "path" : "~/Documents/Projects/TidyTuesday/TT-2020-w13/traumatic_brain-injuries.R",
+    "project_path" : "traumatic_brain-injuries.R",
+    "properties" : {
+        "cursorPosition" : "151,0",
+        "scrollLine" : "139",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
