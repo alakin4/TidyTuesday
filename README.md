@@ -19,4 +19,7 @@ My contributions to the [Tidytuesday](https://github.com/rfordatascience/tidytue
 ![](TT-2020-w11/plots/in_out_state_tuition.png)
 
 ## Week 12
-![](TT-2020-w12/plots/the_office_emotions.png)
+![](TT-2020-w12/plots/the_office_emotions_v2.png)
+
+## Week 13
+![](TT-2020-w13/plots/traumatic_brain_injuries.png)
