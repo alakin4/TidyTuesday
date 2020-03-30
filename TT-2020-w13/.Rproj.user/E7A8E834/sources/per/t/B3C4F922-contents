@@ -59,9 +59,9 @@ tbi_age<-tbi_age%>%
 
 #plot 
 my_title <-'Traumatic Brain Injuries (2006-2014)'
-my_subtitle = glue::glue("The total number of Traumatic Brain Injuries increased steadily. The increase is strongly attributed to
-the increase in the number of<br>injuries caused by falls. Most of the injuries 
-caused by falls occur in the age groups 0-17 (**22.7%**) and 75+ (**20.7%**).")
+my_subtitle = glue::glue("The total number of Traumatic Brain Injuries (TBIs) increased steadily. The increase is strongly attributed to
+the increase in the number of<br>injuries caused by Falls. Other causes of TBIs include: Struck By/Against, Unknown/Other, Assaults, Motor vehicle. Most of the injuries 
+<br>caused by falls occur in the age groups 0-17 (**22.7%**) and 75+ (**20.7%**).")
 theme_set(theme_light_modified(base_family = "JetBrains Mono"))
 #-----
 tbi_year_annual_cause<-tbi_year%>%
