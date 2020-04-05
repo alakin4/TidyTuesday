@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3305500715",
+    "hash" : "0",
     "id" : "DC18769C",
     "lastKnownWriteTime" : 1586091289,
     "last_content_update" : 1586091289878,
     "path" : "~/Documents/Projects/TidyTuesday/TT-2020-w14/beer_production.R",
     "project_path" : "beer_production.R",
     "properties" : {
-        "cursorPosition" : "246,0",
-        "scrollLine" : "242",
+        "cursorPosition" : "267,0",
+        "scrollLine" : "258",
         "tempName" : "Untitled1"
     },
     "read_only" : false,
