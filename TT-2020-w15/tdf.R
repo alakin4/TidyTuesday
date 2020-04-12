@@ -72,10 +72,11 @@ padded_df <-jerseys_2006_2019%>%
 #white: fdfdfd
 #yellow: f5db2e
 
-my_title <-"THE QUEST FOR THE <span style='color:#f5db2e;'>YELLOW JERSEY</span> IN<br>TOUR de FRANCE"
+my_title <-"THE QUEST FOR THE <span style='color:#f5db2e;'>**YELLOW JERSEY**</span> IN<br>TOUR de FRANCE"
 my_subtitle = glue::glue("Exploring the stages when the year's (2006-2019) general classification winner took-over, and endorsed the yellow jersey.<br>
-                          The races with a prologue (0) stage do not have stage 21. The winners are often dominant in the last stages of the race.<br>
-                          However in 2018, Geramt Thomas was instead dominat in the first 4 stages.")
+                          The races with a prologue (0) stage do not have stage 21. In 2014, Vicenzo Nibali endorsed the <span style='color:#f5db2e;'>**yellow jersey**</span> for all<br>
+                          stages except **stage 1 and 9**. The winners are often dominant in the last stages of the race. However in 2018, Geramt Thomas<br>
+                          was instead dominat in the first 4 stages.")
 
 ggplot(data = padded_df,
        aes(y=y, 
