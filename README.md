@@ -24,5 +24,8 @@ My contributions to the [Tidytuesday](https://github.com/rfordatascience/tidytue
 ## Week 13
 ![](TT-2020-w13/plots/traumatic_brain_injuries.png)
 
-## Week 13
+## Week 14
 ![](TT-2020-w14/plots/beer_production.png)
+
+## Week 15
+![](TT-2020-w15/plots/tdf.png)
