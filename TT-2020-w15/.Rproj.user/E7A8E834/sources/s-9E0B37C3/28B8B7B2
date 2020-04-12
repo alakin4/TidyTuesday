@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586624539154.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "28B8B7B2",
+    "lastKnownWriteTime" : 1586719096,
+    "last_content_update" : 1586719096368,
+    "path" : "~/Documents/Projects/TidyTuesday/TT-2020-w15/tdf.R",
+    "project_path" : "tdf.R",
+    "properties" : {
+        "cursorPosition" : "122,59",
+        "scrollLine" : "114",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
