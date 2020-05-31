@@ -175,4 +175,4 @@ html_print(div(class = "tableTitle",
           text-align:center",
           "Tidytuesday week #22 | Data: www.kaggle.com  | @kinenealan"))))
 #Piedra-Regular
-
+# I manually saved the image from he viewer
