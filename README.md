@@ -29,3 +29,9 @@ My contributions to the [Tidytuesday](https://github.com/rfordatascience/tidytue
 
 ## Week 15
 ![](TT-2020-w15/plots/tdf.png)
+
+## Week 22
+![](TT-2020-w22/plots/cocktails.png)
+
+## Week 28
+![](TT-2020-w28/plots/coffee_ratings.png)
